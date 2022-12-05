@@ -22,7 +22,7 @@ public class ManyOneDemoApplication implements CommandLineRunner {
 
         JPAUtil.checkData("select * from category");
         JPAUtil.checkData("select * from product");
-        JPAUtil.checkData("select * from category_product");
+        // JPAUtil.checkData("select * from my_category_my_product");
 
 
     }

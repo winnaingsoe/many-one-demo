@@ -4,12 +4,16 @@ import com.example.manyonedemo.dao.CategoryDao;
 import com.example.manyonedemo.dao.ProductDao;
 import com.example.manyonedemo.ds.Category;
 import com.example.manyonedemo.ds.Product;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
 @Service
 public class ProductService {
+
+    @Autowired
     private ProductDao productDao;
+    @Autowired
     private CategoryDao categoryDao;
 
     @Transactional
